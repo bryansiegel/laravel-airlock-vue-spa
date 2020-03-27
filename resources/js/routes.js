@@ -9,6 +9,7 @@ Vue.use(VueRouter);
 
 let router = new VueRouter({
     mode: "history",
+    base:'/laravel-airlock-vue-spa/public',
     routes: [{
             path: '/',
             name: 'home',

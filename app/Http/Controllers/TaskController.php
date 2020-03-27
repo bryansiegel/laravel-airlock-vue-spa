@@ -9,8 +9,11 @@ class TaskController extends Controller
 {
     public function addTask(Request $request)
     {
+//        $task = Task::create([
+//            'task' => $request->task
         $task = Task::create([
-            'task' => $request->task
+        'task' => $request->task,
+
         ]);
 
         return \response()->json(['message' => 'task added!'], 200);
