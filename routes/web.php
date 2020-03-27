@@ -17,6 +17,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// axios.get('/sanctum/csrf-cookie').then(response => {
+// //Login
+
+// });
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
